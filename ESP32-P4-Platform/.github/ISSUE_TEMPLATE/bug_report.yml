@@ -1,0 +1,66 @@
+name: Bug report
+description: Report a build, flash, runtime, or documentation issue
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: input
+    id: board
+    attributes:
+      label: Board
+      description: Include the exact Waveshare board name and revision if known.
+      placeholder: ESP32-P4-NANO
+    validations:
+      required: true
+  - type: input
+    id: example
+    attributes:
+      label: Example path
+      placeholder: examples/esp-idf/02_HelloWorld
+    validations:
+      required: true
+  - type: dropdown
+    id: framework
+    attributes:
+      label: Framework
+      options:
+        - ESP-IDF
+        - Arduino
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Framework version
+      placeholder: ESP-IDF v5.4.0 or Arduino-ESP32 v3.2.0
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened? What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run ...
+        2. Configure ...
+        3. Build or flash ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste build errors, serial output, or relevant command output.
+      render: text
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware setup
+      description: Include wiring, modules, display/camera model, power supply, or photos when relevant.

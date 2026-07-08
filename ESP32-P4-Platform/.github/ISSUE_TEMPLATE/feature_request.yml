@@ -1,0 +1,35 @@
+name: Feature request
+description: Suggest a new example, board note, or improvement
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What would you like to add or improve?
+    validations:
+      required: true
+  - type: input
+    id: board
+    attributes:
+      label: Target board
+      placeholder: ESP32-P4-WIFI6-DEV-KIT
+  - type: input
+    id: area
+    attributes:
+      label: Area
+      placeholder: display, camera, Ethernet, LVGL, Arduino, documentation
+  - type: textarea
+    id: value
+    attributes:
+      label: Why this is useful
+      description: Explain the user problem or hardware workflow this would help.
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Add links, logs, screenshots, or implementation ideas.
