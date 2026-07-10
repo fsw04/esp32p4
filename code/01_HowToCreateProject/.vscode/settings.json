@@ -1,0 +1,18 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.extensionActivationMode": "always",
+  "idf.openOcdConfigs": [
+    "board/esp32p4-builtin.cfg"
+  ],
+  "idf.portWin": "COM23",
+  "idf.currentSetup": "D:\\env-esp32\\v5.4.4\\esp-idf",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32p4"
+  },
+  "clangd.path": "C:\\Espressif\\tools\\esp-clang\\esp-18.1.2_20240912\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=d:\\esp32\\esp32p4\\code\\01_HowToCreateProject\\build"
+  ]
+}
