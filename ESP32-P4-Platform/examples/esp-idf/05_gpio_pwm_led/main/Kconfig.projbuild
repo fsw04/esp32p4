@@ -1,0 +1,16 @@
+menu "GPIO IO Example Configuration"
+
+    config EXAMPLE_GPIO_OUTPUT
+        int "Output GPIO number"
+        default 2
+
+    config EXAMPLE_GPIO_INPUT
+        int "Input GPIO number"
+        default 3
+
+    config EXAMPLE_GPIO_INPUT_PULLUP
+        bool "Enable input pull-up"
+        default y
+
+endmenu
+
